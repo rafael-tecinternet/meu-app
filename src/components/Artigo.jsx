@@ -1,10 +1,11 @@
-const Artigo = (props) => {
+/* Versão às props usando destructuring de objeto */
+const Artigo = ({ titulo, subtitulo, curso, children }) => {
   return (
     <article>
-      <h3> {props.titulo} </h3>
-      <h4> {props.subtitulo} </h4>
-      <p> {props.children} </p>
-      <p> Curso: {props.curso} </p>
+      <h3> {titulo} </h3>
+      <h4> {subtitulo} </h4>
+      <p> {children} </p>
+      <p> Curso: {curso} </p>
     </article>
   );
 };
