@@ -1,8 +1,7 @@
 import Artigo from "../Artigo";
 
 const Conteudo = () => {
-  // Comentário JS ctrl ;
-  /* Comentário JS shift alt a */
+  const cursos = ["Desing", "PHP", "React"];
   return (
     <main>
       <section>
@@ -15,9 +14,27 @@ const Conteudo = () => {
           commodi voluptate fugit.
         </p>
 
-        <Artigo>Este é o texto do primeiro artigo...</Artigo>
-        <Artigo>Este é o texto do segundo artigo...</Artigo>
-        <Artigo>Este é o texto do terceiro artigo...</Artigo>
+        <Artigo
+          titulo="Artigo 1"
+          subtitulo="Subtitilo do Artigo 1"
+          curso={cursos[0]}
+        >
+          Este é o texto do primeiro artigo...
+        </Artigo>
+        <Artigo
+          titulo="Artigo 2"
+          subtitulo="Subtitilo do Artigo 2"
+          curso={cursos[1]}
+        >
+          Este é o texto do segundo artigo...
+        </Artigo>
+        <Artigo
+          titulo="Artigo 3"
+          subtitulo="Subtitilo do Artigo 3"
+          curso={cursos[2]}
+        >
+          Este é o texto do terceiro artigo...
+        </Artigo>
       </section>
     </main>
   );
