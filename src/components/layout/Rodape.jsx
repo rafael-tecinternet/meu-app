@@ -1,8 +1,29 @@
+import { useState } from "react";
+
 const Rodape = () => {
+  const [estilos, setEstilos] = useState({
+    textAlign: "center",
+    textTransform: "uppercase",
+    border: "solid 4px red",
+  });
+
+  const esconder = () => setEstilos({ display: "none" });
+  const exibir = () => setEstilos({ display: "block" });
+
   return (
-    <footer>
-      <h2>Rodapé!</h2>
-    </footer>
+    <>
+      <p>
+        <span onMouseOver={esconder}>Esconder</span> |
+        <span onMouseOver={exibir}>Exibir</span>
+      </p>
+      <footer
+        style={
+          estilos
+        } /*  onMouseOver={() => setEstilos({ display: "none" })} */
+      >
+        <h2>Rodapé!</h2>
+      </footer>
+    </>
   );
 };
 
