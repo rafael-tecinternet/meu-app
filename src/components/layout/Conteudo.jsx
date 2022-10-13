@@ -33,17 +33,15 @@ const Conteudo = () => {
           harum recusandae? Inventore illo consectetur, quisquam distinctio
           commodi voluptate fugit.
         </p>
-        {artigos.map((artigo) => {
-          return (
-            <Artigo
-              titulo={artigo.titulo}
-              subtitulo={artigo.subtitulo}
-              curso={artigo.curso}
-            >
-              {artigo.texto}
-            </Artigo>
-          );
-        })}
+        {artigos.map((artigo) => (
+          <Artigo
+            titulo={artigo.titulo}
+            subtitulo={artigo.subtitulo}
+            curso={artigo.curso}
+          >
+            {artigo.texto}
+          </Artigo>
+        ))}
       </section>
     </main>
   );
