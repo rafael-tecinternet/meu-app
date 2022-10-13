@@ -15,9 +15,9 @@ const Conteudo = () => {
           commodi voluptate fugit.
         </p>
 
-        <Artigo />
-        <Artigo />
-        <Artigo />
+        <Artigo>Este é o texto do primeiro artigo...</Artigo>
+        <Artigo>Este é o texto do segundo artigo...</Artigo>
+        <Artigo>Este é o texto do terceiro artigo...</Artigo>
       </section>
     </main>
   );
