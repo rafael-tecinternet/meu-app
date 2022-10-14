@@ -8,15 +8,19 @@ import Produtos from "./pages/Produtos";
 const App = () => {
   return (
     <>
+      {/* BrowserRouter: container de rotas (precisa envolver todos os componentes do APP) */}
       <BrowserRouter>
         <Cabecalho />
+        {/* Switch: mecanismo para troca/alternância de rotas */}
         <Switch>
+          {/* Route: configuração de cada rota (qual caminho, qual componente) */}
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/produtos">
+          <Route path="/produtos" component={Produtos} />
+          {/* <Route path="/produtos">
             <Produtos />
-          </Route>
+          </Route> */}
           <Route path="/servicos">
             <Servicos />
           </Route>

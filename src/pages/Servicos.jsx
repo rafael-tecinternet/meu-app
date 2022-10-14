@@ -12,6 +12,17 @@ const Servicos = () => {
         eligendi? Fugiat repudiandae possimus necessitatibus, dolore impedit
         sint aut atque nemo.
       </p>
+      <section>
+        <h3>Tipos de Serviços</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic
+          itaque, sapiente voluptate dicta fuga expedita quod minima maiores
+          fugit corporis minus, ipsa obcaecati! Amet sed nisi rem atque esse
+          mollitia alias iure perferendis sunt nostrum minus commodi quis quas
+          ducimus dolorum quibusdam asperiores quae, corrupti consequuntur eius
+          optio debitis!
+        </p>
+      </section>
     </>
   );
 };

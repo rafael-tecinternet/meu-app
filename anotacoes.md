@@ -22,3 +22,7 @@ Função que retorna uma variável com o valor de estado (state) e uma função 
 ### Instalação da biblioteca react-router-dom (versão 5)
 
 npm install react-router-dom@5
+
+# Criando um projeto React usando a ferramenta vite
+
+npm create vite@latest
